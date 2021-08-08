@@ -1,0 +1,25 @@
+{
+	"Console log": {
+		"prefix": "cl",
+		"body": "console.log($1);",
+		"description": "Console Log"
+	},
+
+	"React Function Component": {
+		"prefix": "fc",
+		"body": [
+		  "import React, { Fragment } from 'react';",
+		  "",
+		  "const ${TM_FILENAME/(.*)\\..+$/$1/} = () => {",
+		  "    return (",
+		  "        <Fragment>",
+		  "            ",
+		  "        </Fragment>",
+		  "    )",
+		  "}",
+		  "",
+		  "export default ${TM_FILENAME/(.*)\\..+$/$1/};"
+		],
+		"description": "React Function Component"
+	  }
+}

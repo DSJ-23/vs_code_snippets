@@ -1,0 +1,27 @@
+{
+    "go main": {
+		"prefix": "go",
+		"body": [
+			"package main",
+			"",
+			"func main(){",
+			"",
+			"}"
+		], 
+		"description": "simple go new file"
+	},
+    "go import fmt": {
+        "prefix": "fmt",
+        "body": [
+            "import \"fmt\""
+        ],
+        "description": "import fmt"
+    },
+    "go print new line": {
+        "prefix": "prl",
+        "body": [
+            "fmt.Println($1)"
+        ],
+        "description": "print new line go"
+    }
+}
